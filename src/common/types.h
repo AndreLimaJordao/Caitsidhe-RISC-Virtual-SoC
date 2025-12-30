@@ -29,7 +29,7 @@ namespace cvsim {
     using sbyte_t = int8_t;
 
     // Endereços de memória são representados como palavras de 32 bits
-    using address_t = uint32_t;
+    using addr_t = uint32_t;
 
     // Endereço de banco de registradores (0 a 31 podem ser descritos com 5 bits, mas usamos 8 bits para alinhamento)
     using reg_addr_t = uint8_t;
@@ -41,7 +41,7 @@ namespace cvsim {
     constexpr int XLEN = 32;                    // Limite de bits do registrador
     constexpr int NUM_REGS = 32;                // Número de registradores gerais
     constexpr int RESET_VECTOR = 0x80000000;    // Vetor de reset onde PC inicia
-    constexpr address_t MEM_SIZE = 64 * 1024;   // Tamanho da memória: 64kB
+    constexpr addr_t MEM_SIZE = 64 * 1024;   // Tamanho da memória: 64kB
     // ===================================
     // Definições de instruções
     // ===================================
