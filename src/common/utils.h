@@ -21,8 +21,6 @@ namespace utils {
 
     // Função de extensão de sinal para um valor com 'bits' bits
     // Exemplo: sign_extend(0b111, 3) retorna 0xFFFFFFFF
-    // input_bits: número de bits do valor original
-    template <unsigned input_bits>
     constexpr int32_t sign_extend(uint32_t value) {
         struct {
             int32_t value;
